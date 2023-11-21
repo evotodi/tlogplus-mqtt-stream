@@ -1,11 +1,11 @@
 {
-  "name": "TLog Plus MQTT Stream",
+  "name": "TLogPlusMqttStream",
   "version": "1.0.0",
   "description": "Streamer for TLogPlus",
   "keywords": "logging, communication",
   "repository": {
     "type": "git",
-    "url": "https://github.com/evotodi/tee-log-plus"
+    "url": "https://github.com/evotodi/tlogplus-mqtt-stream"
   },
   "authors": [
     {
@@ -16,9 +16,14 @@
     }
   ],
   "license": "Apache-2.0",
-  "homepage": "https://github.com/evotodi/tee-log-plus",
+  "homepage": "https://github.com/evotodi/tlogplus",
   "dependencies": {
-    "evotodi/tee-log-plus": "~1.0.0",
+    "evotodi/TLogPlus": "*",
     "knolleary/PubSubClient": "~2.8"
-  }
+  },
+  "headers": ["MqttlogStream.h"],
+  "platforms": [
+    "espressif8266",
+    "espressif32"
+  ]
 }
